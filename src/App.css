@@ -1,0 +1,194 @@
+
+#portfolio
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#menu, nav
+{
+  top: 0;
+  position: fixed;
+  min-height: 40px;
+  height: 10vh;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#menu
+{
+  background-image: url("https://i.postimg.cc/QC0Z07pV/wooden_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+nav
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+nav > a
+{ 
+  text-decoration: none;
+  color: #eacbab;
+  font-weight: 500;
+}
+
+nav > a:hover
+{
+  font-weight: 900; 
+  color: #c69d77;
+}
+
+h1
+{
+  text-align: center;
+}
+
+.section
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding-top: 40px;
+}
+
+#aboutMe
+{
+  width: 50vw;
+  text-align: center;
+  word-break: break-word;
+  font-size: 1.9em;
+}
+
+.link
+{
+  margin: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #6d1f03;
+  text-decoration: none;
+  background: rgba(214, 174, 137, 0.8);
+  color: #6d1f03;
+  font-weight: 900;
+}
+
+.link:hover
+{
+  border: 5px solid #421302;
+  color: #421302;
+}
+
+#linkBox
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projectLinkBox
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 30px;
+}
+
+.projectLink
+{
+  text-decoration: none;
+  display: block;
+  width: 330px;
+  height: 190px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.projectLink .tooltip
+{
+  text-align: justify;
+  visibility: hidden;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  background: black;
+  color: white;
+  position: relative;
+  top: 40px;
+  right: -60px;
+  font-size: 1.1em;
+}
+
+.projectLink:hover .tooltip
+{
+  visibility: visible;
+}
+
+#projectBox
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding:  0 10vw;
+}
+
+@media (min-width: 1601px)
+{
+  .projectLink
+  {
+    width: 450px;
+    height: 280px;
+  }
+  .projectLink .tooltip 
+  {
+    font-size: 1.4em;
+  }
+  .link
+  {
+    width: 180px;
+    height: 180px;
+    font-size: 1.5em;
+  }
+  #aboutMe
+  {
+    font-size: 2.1em;
+  }
+}
+
+@media(max-width: 600px)
+{
+  nav{
+    flex-direction: column;
+    min-height: 70px;
+    font-size: 0.9em;
+  }
+
+  .projectLink .tooltip 
+  {
+    top: 20px;
+    right: 0;
+    font-size: 0.9em;
+  }
+
+  #aboutMe
+  {
+    font-size: 1em;
+  }
+}
+

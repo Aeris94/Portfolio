@@ -1,0 +1,10 @@
+body
+{
+  margin: 0;
+  background: rgb(226, 188, 138);
+  background-image: url("https://i.postimg.cc/QC0Z07pV/wooden_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: "Calibri", "Helvietica", "Arial";
+}
